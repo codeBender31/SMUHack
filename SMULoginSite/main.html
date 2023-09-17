@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Information</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/c3bef96ecf.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/twilio@5.39.0/dist/twilio.min.js"></script>
+
+</head>
+<body>
+    <img src="Background.png">
+    <div class="navbar">
+      <button id = "sendSmsButton" class = "button"><i class="fa-solid fa-paper-plane"></i> Notifications</button>
+        <p id = "smsStatus"></p>
+          <script type="module" src="send-sms.js"></script>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Assets</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search Assets.." id="myInput" onkeyup="filterFunction()">
+                <a href="testGraph.png" class="text" id = "HVACData">HVAC</a>
+                <!-- <img id = "HVAC image" src = "testGraph.png"> -->
+                <a href="#" class="text" id = "ElevatorData">Elevator</a>
+                <a href="Electrical.html" class="text" id = "PanelData">Electrical Panel</a>
+                <!-- <img id = "Panel image" src = "testGraph#2.png"> -->
+                <a href="#" class="text" id = "AlarmData">Fire Alarm</a>
+                <a href="#" class="text" id = "PlumbingData">Plumbing</a>
+            </div>
+        </div>
+        <!-- <a href="#" class="button"><i class="fa-solid fa-paper-plane"></i> Notifications</a> -->
+        <a href="#" class="button"><i class="fa-solid fa-file-invoice"></i> Tickets</a>
+        <a href="index.html" class="button"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </div>
+    <script src="main.js"></script>
+  <img src="GraphofAssets.png" class="center">
+</body>
+</html>
