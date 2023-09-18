@@ -2,14 +2,14 @@ import twilio from 'https://cdn.jsdelivr.net/npm/twilio@5.39.0/dist/twilio.min.j
 // Import the Twilio library
  // const twilio = require('twilio');
 // Your Twilio account SID and authentication token
-const accountSid = 'ACc9e5ba46f556939d783038cc0cb69cb2';
-const authToken = '10568bd3d06366c179ba9f9c4175dca5';
+const accountSid = '
+const authToken = '';
 
 // Create a Twilio client
 const client = twilio(accountSid, authToken);
 
 // Define the recipient's phone number and the message you want to send
-const recipientPhoneNumber = '+14696505404'; // Replace with the recipient's actual phone number
+const recipientPhoneNumber = ''; // Replace with the recipient's actual phone number
 const message = 'Hey CBRE Floor Manager, we need you to inspect machine #12626. Active fault code P0101. Possible open circuit.';
 
 // Get references to the button and status paragraph
@@ -22,7 +22,7 @@ sendSmsButton.addEventListener('click', () => {
   client.messages
     .create({
       body: message,
-      from: '+18449912339', // Replace with your Twilio phone number
+      from: '+', // Replace with your Twilio phone number
       to: recipientPhoneNumber,
     })
     .then(message => {
